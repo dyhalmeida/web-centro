@@ -299,7 +299,54 @@ main {
     background-color:#FFF;
 }
 /* ================================================== about =================================================== */
-
+#about {
+    display:flex;
+    justify-content:center;
+    background-color:#F6F6F6;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+.about-illustration {
+    width:555px;
+    height:631px;
+    border-radius:94px 0px;
+    margin-right:80px;
+    background-color:var(--black);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-image:url('images/about-thumbnail.svg')
+}
+.about-content {
+    display:flex;
+}
+.about-content--item {
+    max-width:573px;
+    cursor:pointer;
+    height:174px;
+    display:flex;
+    align-items:flex-start;
+    margin-bottom:20px;
+    border-radius:30px;
+    background-color:#FFF;
+}
+.about-content--item:last-child {
+    margin-bottom:0px;
+}
+.about-content--item--area {
+    margin-left:24px;
+    margin-right:42px;
+}
+.about-content--item img {
+    margin-top:40px;
+    margin-left:42px;
+}
+.about-title {
+    color:var(--black);
+    font-size:28px;
+    font-weight:700;
+    margin-top:27px;
+    margin-bottom:24px;
+}
 /* =================================================== faq ==================================================== */
 
 /* ================================================= promotion ================================================ */
