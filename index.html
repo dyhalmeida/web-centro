@@ -293,25 +293,25 @@
         <div class="widget-body">
             <div class="about-illustration"></div>
             <div class="about-content column">
-                <div class="about-content--item">
-                    <img src="images/our-mission.svg" alt="Nossa missão">
+                <div id="aboutOne" class="about-content--item" onmouseover="aboutOneActive()" onmouseout="aboutOneDisable()">
+                    <img id="aboutOneImage" src="images/our-mission.svg" alt="Nossa missão">
                     <div class="about-content--item--area">
-                        <div class="about-title">Nossa Missão</div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div id="aboutOneTitle" class="about-title">Nossa Missão</div>
+                        <p id="aboutOneText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                 </div>
-                <div class="about-content--item">
-                    <img src="images/who-we-are.svg" alt="Quem nós somos">
+                <div id="aboutTwo" class="about-content--item" onmouseover="aboutTwoActive()" onmouseout="aboutTwoDisable()">
+                    <img id="aboutTwoImage" src="images/who-we-are.svg" alt="Quem nós somos">
                     <div class="about-content--item--area">
-                        <div class="about-title">Quem nós Somos</div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div id="aboutTwoTitle" class="about-title">Quem nós Somos</div>
+                        <p id="aboutTwoText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                 </div>
-                <div class="about-content--item">
-                    <img src="images/our-vision.svg" alt="Nossa visão">
+                <div id="aboutThree" class="about-content--item" onmouseover="aboutThreeActive()" onmouseout="aboutThreeDisable()">
+                    <img id="aboutThreeImage" src="images/our-vision.svg" alt="Nossa visão">
                     <div class="about-content--item--area">
-                        <div class="about-title">Nossa Visão</div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div id="aboutThreeTitle" class="about-title">Nossa Visão</div>
+                        <p id="aboutThreeText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                 </div>
             </div>
@@ -324,7 +324,7 @@
         <div class="widget-title">Perguntas Frequentes</div>
         <div class="widget-body">
 
-            <div class="faq-1 faq-selected">
+            <div class="faq-1 faq-selected" onclick="faqOne()">
                 <div class="faq-content column">
                     <div class="faq-title">A internet cai muito?</div>
                     <div class="faq-text">
