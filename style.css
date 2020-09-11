@@ -335,7 +335,7 @@ main {
 .about-content--item {
     max-width:573px;
     cursor:pointer;
-    height:174px;
+    height:200px;
     display:flex;
     align-items:flex-start;
     margin-bottom:20px;
@@ -358,7 +358,7 @@ main {
     font-size:28px;
     font-weight:700;
     margin-top:27px;
-    margin-bottom:24px;
+    margin-bottom:10px;
 }
 /* =================================================== faq ==================================================== */
 #faq {
@@ -592,6 +592,9 @@ footer {
     .footer-item--content p {
         max-width:600px;
     }
+    .footer-item--content a {
+        justify-content:center;
+    }
     .footer-item--title,
     footer nav {
         text-align:center;
@@ -685,7 +688,7 @@ footer {
         width:360px;
     }
     .about-content--item {
-        height:260px;
+        height:310px;
     }
     .about-content--item img {
         width:70px;
@@ -775,7 +778,12 @@ footer {
         width:315px;
     }
     .about-content--item {
-        height:284px;
+        flex-direction:column;
+        height:380px;
+    }
+    .about-content--item img {
+        width:auto;
+        margin-left:24px;
     }
     .faq-1, .faq-2, .faq-3, .faq-4, .faq-5, .faq-6 {
         max-width:315px;
