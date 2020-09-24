@@ -1,6 +1,6 @@
 # Web Centro
 
-Description...
+Project description coming soon...
 
 ![](images/web-preview.gif)
 
