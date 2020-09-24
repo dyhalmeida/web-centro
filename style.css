@@ -405,6 +405,38 @@ main {
 .faq-4.faq-selected {
     height:400px;
 }
+.faq-6.faq-selected {
+    height:450px;
+}
+.faq-text a {
+    margin:0;
+    padding:0;
+    display:block;
+    min-width:auto;
+    min-height:auto;
+    text-align:left;
+    height:auto;
+    min-width:auto;
+    max-width:auto;
+    margin-left:0px !important;
+    margin-right:0px;
+    border-radius:0px;
+    border:0px;
+    color:var(--primary);
+    font-weight:700;
+}
+.faq-text a:hover {
+    display:block;
+    min-width:auto;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    border-radius:0px;
+    transition:none;
+    transform:translateY(0px);
+    border:0px;
+    text-decoration:underline;
+}
 #faq:first-child {
     margin-right:0px;
 }
@@ -485,7 +517,7 @@ footer {
     margin-bottom:30px;
 }
 .footer-item--content p {
-    max-width:300px;
+    max-width:500px;
 }
 .footer-item--content ul {
     padding:0;
@@ -535,6 +567,46 @@ footer {
 }
 .footer-copy p {
     font-size:16px;
+}
+/* ================================================ modal ================================================ */
+.modal-container {
+    top:0px;
+    left:0px;
+    position:fixed;
+    z-index:3000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    width:100vw;
+    height:100vh;
+    background-color:#22222288;
+}
+.modal {
+    width:60%;
+    min-width:310px;
+    padding:40px;
+    border-radius:30px;
+    background-color:#FFF;
+    border:2px solid var(--primary);
+}
+.mostrar {
+    display:flex;
+}
+/*Animação do modal*/
+@keyframes modal {
+    /*De*/
+    from {
+        opacity:0;
+        transform: translate3d(0, -60px, 0); /*Mudar posição do elemento*/
+    }
+    /*Para*/
+    to {
+        opacity:1;
+        transform: translate3d(0, 0, 0); /*Mudar posição do elemento*/
+    }
+}
+.mostrar .modal{
+    animation:modal .3s;
 }
 /* ================================================ responsive ================================================ */
 @media (max-height:750px) {
@@ -716,6 +788,9 @@ footer {
     .faq-5.faq-selected {
         height:340px;
     }
+    .faq-6.faq-selected {
+        height:620px;
+    }
     .faq-content {
         padding:16px 10px 14px 20px;
     }
@@ -807,6 +882,12 @@ footer {
     .faq-5.faq-selected {
         height:400px;
     }
+    .faq-6.faq-selected {
+        height:640px;
+    }
+    .faq-text a {
+        padding:0px;
+    }
 }
 @media (max-width:330px) {
     .container {
@@ -830,4 +911,12 @@ footer {
     .footer-item--content p {
         max-width:310px;
     }
+    .faq-text a {
+        padding:0px;
+    }
+    .faq-6.faq-selected {
+        height:670px;
+    }
 }
+
+

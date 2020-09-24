@@ -40,15 +40,15 @@
             </p>
             <div class="banner-options">
                 <div class="subscribe-now"><a href="#plans">ASSINE JÁ</a></div>
-                <div class="contact"><a href="https://api.whatsapp.com/send?phone=5521990061043&text=Ol%C3%A1%2C%20estou%20precisando%20de%20ajuda%20%3A)" target="_blank">ATENDIMENTO</a></div>
+                <div class="contact"><a href="https://api.whatsapp.com/send?phone=5521990061043&text=Ol%C3%A1%2C%20estou%20precisando%20de%20ajuda%20%3A)" target="_blank" rel="noopener">ATENDIMENTO</a></div>
             </div>
         </div>
         <div class="banner-illustration"><img src="images/banner-illustration.svg" alt="Ilustração de homem mexendo em um computador"></div>
     </div>
     <div class="social column">
-        <a href="https://api.whatsapp.com/send?phone=5521990061043&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20ter%20a%20internet%20mais%20r%C3%A1pida%20da%20regi%C3%A3o." target="_blank"><img src="images/wp.svg" alt="WhatsApp da Web Centro: 97540-5618"></a>
-        <a href="https://www.instagram.com/web.centro/" target="_blank"><img src="images/insta.svg" alt="Instagram da Web Centro: web.centro"></a>
-        <a href="" target="_blank"><img src="images/email.svg" alt="Email da Web Centro: oi@webcentro.com.br"></a>
+        <a href="https://api.whatsapp.com/send?phone=5521990061043&text=Ol%C3%A1%2C%20eu%20gostaria%20de%20ter%20a%20internet%20mais%20r%C3%A1pida%20da%20regi%C3%A3o." target="_blank" rel="noopener"><img src="images/wp.svg" alt="WhatsApp da Web Centro: 97540-5618"></a>
+        <a href="https://www.instagram.com/web.centro/" target="_blank" rel="noopener"><img src="images/insta.svg" alt="Instagram da Web Centro: web.centro"></a>
+        <a href="http://www.webcentro.com.br/" target="_blank" rel="noopener"><img src="images/email.svg" alt="Email da Web Centro: oi@webcentro.com.br"></a>
     </div>
 </section>
 <!-- ================================================== plans =================================================== -->
@@ -56,7 +56,7 @@
     <div class="container column">
         <div class="widget-title">Planos</div>
         <div class="widget-body">
-            <a href="#">
+            <a onclick="planOne()">
                 <div class="plan-one column">
                     <p class="consumption">70MB</p>
                     <span class="price">R$ 69,90</span>
@@ -102,7 +102,7 @@
                 </div>
             </a>
             <div class="selected column">
-                <a href="#" class="column">
+                <a class="column" onclick="planTwo()">
                     <div class="recommended">RECOMENDADO PARA VOCÊ</div>
                     <div class="plan-two column">
                         <p class="consumption">80MB</p>
@@ -149,7 +149,7 @@
                     </div>
                 </a>
             </div>
-            <a href="#">
+            <a onclick="planThree()">
                 <div class="plan-three column">
                     <p class="consumption">90MB</p>
                     <span class="price">R$ 89,90</span>
@@ -194,7 +194,7 @@
                     <button>QUERO ESSE</button>
                 </div>
             </a>
-            <a href="#">
+            <a onclick="planFour()">
                 <div class="plan-four column">
                     <p class="consumption">100MB</p>
                     <span class="price">R$ 99,90</span>
@@ -239,7 +239,7 @@
                     <button>QUERO ESSE</button>
                 </div>
             </a>
-            <a href="#">
+            <a onclick="planFive()">
                 <div class="plan-five column">
                     <p class="consumption">200MB</p>
                     <span class="price">R$ 199,90</span>
@@ -395,14 +395,8 @@
                     <div class="faq-title">Qual a maneira correta de medir a banda contratada?</div>
                     <div class="faq-text" style="display:none;">
                         <p>
-                            Caso queira testar se a quantidade de banda contratada está chegando em sua 
-                            residência é de extrema importância que você ligue um cabo de rede entre 
-                            um computador ou notebook e seu roteador, logo em seguida basta acessar 
-                            qualquer site de teste confiável: 
-                            <a href="https://www.minhaconexao.com.br/" target="_blank" rel="noopener">minhaconexao.com.br</a> 
-                            <a href="https://www.speedtest.net/" target="_blank" rel="noopener">speedtest.net</a> 
-                            <a href="https://www.fast.com/" target="_blank" rel="noopener">fast.com</a> 
-                            Esse site aferirá primeiro o valor de download e logo seguida o upload.
+                            
+                            Caso queira testar se a quantidade de banda contratada está chegando em sua residência é de extrema importância que você ligue um cabo de rede entre um computador ou notebook e seu roteador, logo em seguida basta acessar qualquer site de teste confiável: <a href="https://www.minhaconexao.com.br/" target="_blank" rel="noopener">minhaconexao.com.br</a> <a href="https://www.speedtest.net/" target="_blank" rel="noopener">speedtest.net</a> <a href="https://www.fast.com/" target="_blank" rel="noopener">fast.com</a> Esse site aferirá primeiro o valor de download e logo seguida o upload.
                         </p>
                     </div>
                 </div>
@@ -429,8 +423,8 @@
         <div class="footer-item column">
             <div class="footer-item--title">Quem Somos?</div>
             <div class="footer-item--content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry's standard. 
+                <p>
+                    Somos um provedor que nasceu com a necessidade de atender clientes em lugares onde não chega um bom serviço, então com essa proposta estamos levando a nossos clientes internet via Fibra Óptica, segurança e suporte técnico rápido e com uma equipe preparada, estamos sempre prontos para atender nossos clientes com a maior qualidade pois estamos sempre investindo em treinamentos e equipamentos de ultima geração.
                 </p>
             </div>
         </div>
@@ -442,7 +436,7 @@
                         <li><a href="#plans">Planos</a></li>
                         <li><a href="#about">Quem somos</a></li>
                         <li><a href="#faq">Perguntas Frequentes</a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=5521990061043" target="_blank">Contato</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5521990061043" target="_blank" rel="noopener">Contato</a></li>
                     </ul>
                 </nav>
             </div>
@@ -452,7 +446,7 @@
             <div class="footer-item--content">
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/web.centro/" target="_blank"><img src="images/insta.svg" alt="Instagram da Web Centro: web.centro">Instagram</a>
+                        <a href="https://www.instagram.com/web.centro/" target="_blank" rel="noopener"><img src="images/insta.svg" alt="Instagram da Web Centro: web.centro">Instagram</a>
                     </li>
                 </ul>
             </div>
@@ -460,7 +454,7 @@
         <div class="footer-item column">
             <div class="footer-item--title">Precisa de Ajuda?</div>
             <div class="footer-item--content">
-                <div class="contact"><a href="https://api.whatsapp.com/send?phone=5521990061043&text=Ol%C3%A1%2C%20estou%20precisando%20de%20ajuda%20%3A)" target="_blank">ATENDIMENTO</a></div>
+                <div class="contact"><a href="https://api.whatsapp.com/send?phone=5521990061043&text=Ol%C3%A1%2C%20estou%20precisando%20de%20ajuda%20%3A)" target="_blank" rel="noopener">ATENDIMENTO</a></div>
             </div>
         </div>
     </div>
@@ -469,6 +463,20 @@
         <p>CNPJ: 00.000.000/0000-00</p>
     </div>
 </footer>
+<!-- ================================================== modal ================================================== -->
+<div id="modal-planOne" class="modal-container">
+    <div class="modal">
+        <h1>70MB - R$ 69,90 Por mês</h1>
+        <button onclick="planClosed()">X</button>
+        Digite seus dados e clique em avançar.
+    </div>
+<div>
+
+
+
+
+
+
 <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
